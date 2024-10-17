@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="cal">
+    <div id="display" class="display">0</div>
+    <div class="btns">
+      <button value="C" onclick="cleardis()">C</button>
+      <button value="7" onclick="appnum('7')">7</button>
+      <button value="8" onclick="appnum('8')">8</button>
+      <button value="9" onclick="appnum('9')">9</button>
+
+      <button value="+" onclick="inoperator('+')">+</button>
+      <button value="4" onclick="appnum('4')">4</button>
+      <button value="5" onclick="appnum('5')">5</button>
+      <button value="6" onclick="appnum('6')">6</button>
+
+      <button value="-" onclick="inoperator('-')">-</button>
+      <button value="1" onclick="appnum('1')">1</button>
+      <button value="2" onclick="appnum('2')">2</button>
+      <button value="3" onclick="appnum('3')">3</button>
+
+      <button value="*" onclick="inoperator('*')">*</button>
+      <button value="0" onclick="appnum('0')">0</button>
+      <button value="/" onclick="inoperator('/')">/</button>
+      <button value="=" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
